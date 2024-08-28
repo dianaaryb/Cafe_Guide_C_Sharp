@@ -1,0 +1,37 @@
+services:
+  sql:
+    image: postgres:16
+    container_name: cafeguide-sql
+    ports:
+      # external: internal
+      - 7890:5432
+    volumes:
+      - sql-volume:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+    restart: on-failure
+    logging:
+      options:
+        max-size: 10m
+        max-file: 3
+        
+  app:
+#    build: ./
+    image: diryb/cafeguide:latest
+    container_name: cafeguide-app
+    ports:
+      - 8080:8080
+    restart: on-failure
+    logging:
+      options:
+        max-size: 10m
+        max-file: 3
+    environment:
+      ConnectionStrings__DefaultConnection: "Host=cafeguide-sql;Port=5432;Database=cafeguide;Username=postgres;Password=postgres"
+    depends_on:
+      - sql
+
+
+volumes:
+  sql-volume:

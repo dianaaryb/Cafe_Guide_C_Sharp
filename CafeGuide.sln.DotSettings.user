@@ -1,0 +1,51 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/di/Library/Caches/JetBrains/Rider2023.2/resharper-host/temp/Rider/vAny/CoverageData/_CafeGuide.-1138820648/Snapshot/snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=404aaa60_002D61fb_002D4df1_002Da1ab_002Ddd6b5b223556/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UnitTest1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::0D54013B-3476-45B9-AFA7-F2E91BB307E8::net8.0::Base.Test.UnitTest1&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::0D54013B-3476-45B9-AFA7-F2E91BB307E8::net8.0::Base.Test.DAL.BaseRepositoryTest.Test1&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.ApiControllerCafeTest.GetTest&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.Integration.HomeControllerTest.Index&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.Integration.api.CafeControllerTest.Index&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.Integration.api.CafeControllerTest.IndexRequiresLogin&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.Integration.api.CafeControllerTest.IndexWithUser&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;Project Location="/Users/di/RiderProjects/icd0024-23-24-s/CafeGuide/App.Test" Presentation="&amp;lt;App&amp;gt;\&amp;lt;App.Test&amp;gt;" /&gt;
+    &lt;Project Location="/Users/di/RiderProjects/icd0024-23-24-s/CafeGuide/Base.Test" Presentation="&amp;lt;Base&amp;gt;\&amp;lt;Base.Test&amp;gt;" /&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a40c8058_002D53a2_002D4add_002Dafc1_002D1f1d9e4c6348/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CanLogout" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.Integration.api.AccountControllerTest.CanLogout&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.ApiControllerCafeTest.GetCafes_ReturnsOk_WithListOfCafes&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.Repositories.CafeRepositoryTests.GetAllSortedAsync_ShouldReturnMappedCafes&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.Repositories.CafeRepositoryTests.GetAllAsync_ShouldReturnMappedCafes&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.Repositories.CafeRepositoryTests.GetAllAsync_ShouldReturnMappedBrands&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.ApiControllerCafeTest.GetTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=de9a4b08_002D3a41_002D4d09_002Db24b_002D179c27db0f0a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetAllAsync_ShouldReturnMappedCafes" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.Repositories.CafeRepositoryTests.GetAllAsync_ShouldReturnMappedCafes&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.ApiControllerCafeTest.GetTest&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::E3BB70AE-B234-4ABE-AFAA-8097B45C6C26::net8.0::App.Test.Repositories.CafeRepositoryTests.GetAllSortedAsync_ShouldReturnMappedCafes&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::0D54013B-3476-45B9-AFA7-F2E91BB307E8::net8.0::Base.Test.DAL.BaseRepositoryTest.TestRemoveAsyncByEntity&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;Project Location="/Users/di/RiderProjects/icd0024-23-24-s/CafeGuide/Base.Test" Presentation="&amp;lt;Base&amp;gt;\&amp;lt;Base.Test&amp;gt;" /&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FApp_002EResources_002FDomain_002FCafe/@EntryIndexedValue">False</s:Boolean>
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FApp_002EResources_002FDomain_002FEntities_002FCafe/@EntryIndexedValue">False</s:Boolean>
+	
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FApp_002EResources_002FDomain_002FEntities_002FCity/@EntryIndexedValue">True</s:Boolean>
+	
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=App_002FApp_002EResources_002FViews_002FShared_002F_005FLayout/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Base_002FBase_002EResources_002FAttribute/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/ShowOnlyErrors/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>

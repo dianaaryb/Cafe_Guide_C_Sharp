@@ -1,0 +1,146 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-WebApp-AF79E51D-DD9A-4E00-BC0E-73C49F6EB7E1</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+        <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.1"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.1"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.1"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.1"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.3">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\App.BLL\App.BLL.csproj" />
+      <ProjectReference Include="..\App.DAL.EF\App.DAL.EF.csproj" />
+      <ProjectReference Include="..\App.DTO\App.DTO.csproj" />
+      <ProjectReference Include="..\Helpers\Helpers.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Areas\Admin\Controllers\" />
+      <Folder Include="wwwroot\uploads\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\CafeCategories\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeCategories\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeCategories\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeCategories\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeCategories\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeOccasions\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeOccasions\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeOccasions\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeOccasions\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeOccasions\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafePhotos\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafePhotos\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafePhotos\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafePhotos\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafePhotos\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Cafes\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Cafes\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Cafes\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Cafes\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Cafes\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeTypes\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeTypes\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeTypes\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeTypes\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CafeTypes\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CategoryOfCafes\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CategoryOfCafes\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CategoryOfCafes\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CategoryOfCafes\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CategoryOfCafes\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Cities\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Cities\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Cities\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Cities\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Cities\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Favourites\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Favourites\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Favourites\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Favourites\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Favourites\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItemCategories\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItemCategories\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItemCategories\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItemCategories\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItemCategories\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItemPhotos\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItemPhotos\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItemPhotos\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItemPhotos\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItemPhotos\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItems\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItems\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItems\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItems\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\MenuItems\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Menus\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Menus\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Menus\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Menus\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Menus\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\OccasionOfCafes\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\OccasionOfCafes\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\OccasionOfCafes\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\OccasionOfCafes\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\OccasionOfCafes\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ReviewPhotos\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ReviewPhotos\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ReviewPhotos\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ReviewPhotos\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ReviewPhotos\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TypeOfCafes\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TypeOfCafes\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TypeOfCafes\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TypeOfCafes\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TypeOfCafes\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Views\CafePhotos\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\CafePhotos\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\CafePhotos\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\CafePhotos\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\CafePhotos\Index.cshtml" />
+      <UpToDateCheckInput Remove="Views\MenuItemPhotos\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\MenuItemPhotos\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\MenuItemPhotos\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\MenuItemPhotos\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\MenuItemPhotos\Index.cshtml" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+</Project>

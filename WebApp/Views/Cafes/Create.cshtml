@@ -1,0 +1,74 @@
+@model App.BLL.DTO.Cafe
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Cafe</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CafeName" class="control-label"></label>
+                <input asp-for="CafeName" class="form-control" />
+                <span asp-validation-for="CafeName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CafeAddress" class="control-label"></label>
+                <input asp-for="CafeAddress" class="form-control" />
+                <span asp-validation-for="CafeAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CafeEmail" class="control-label"></label>
+                <input asp-for="CafeEmail" class="form-control" />
+                <span asp-validation-for="CafeEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CafeTelephone" class="control-label"></label>
+                <input asp-for="CafeTelephone" class="form-control" />
+                <span asp-validation-for="CafeTelephone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CafeWebsiteLink" class="control-label"></label>
+                <input asp-for="CafeWebsiteLink" class="form-control" />
+                <span asp-validation-for="CafeWebsiteLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CafeAverageRating" class="control-label"></label>
+                <input asp-for="CafeAverageRating" class="form-control" />
+                <span asp-validation-for="CafeAverageRating" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                 <label asp-for="AppUserId" class="control-label"></label>
+                 <input asp-for="AppUserId" class="form-control" value="@ViewData["AppUserId"]" readonly />
+             </div>
+            <div class="form-group">
+                <label asp-for="CityId" class="control-label"></label>
+                <select asp-for="CityId" asp-items="ViewBag.CityId" class="form-control">
+                    <option value="">-- Select a city --</option>
+                </select>
+                <span asp-validation-for="CityId" class="text-danger"></span>
+            </div>
+                        <div class="form-group">
+                            <label asp-for="PhotoLink" class="control-label"></label>
+                            <input asp-for="PhotoLink" class="form-control" />
+                            <span asp-validation-for="PhotoLink" class="text-danger"></span>
+                        </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

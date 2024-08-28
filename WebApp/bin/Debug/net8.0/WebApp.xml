@@ -1,0 +1,1365 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApp</name>
+    </assembly>
+    <members>
+        <member name="M:WebApp.ApiControllers.CafeCategoriesController.GetCafeCategories">
+            <summary>
+            Returns all cafe categories visible to current user
+            </summary>
+            <returns>list of cafe categories</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeCategoriesController.GetCafeCategory(System.Guid)">
+            <summary>
+            Returns a single cafe category by id
+            </summary>
+            <param name="id">The ID of the cafe category to retrieve</param>
+            <returns>A cafe category object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeCategoriesController.PutCafeCategory(System.Guid,App.DTO.v1_0.CafeCategory)">
+            <summary>
+            Updates a specific cafe category
+            </summary>
+            <param name="id">The ID of the cafe category to update</param>
+            <param name="cafeCategory">The updated cafe category data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeCategoriesController.PostCafeCategory(App.DTO.v1_0.CafeCategory)">
+            <summary>
+            Adds a new cafe category
+            </summary>
+            <param name="cafeCategory">Data transfer object representing the cafe category to add</param>
+            <returns>The created cafe category</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeCategoriesController.DeleteCafeCategory(System.Guid)">
+            <summary>
+            Deletes a specific cafe category
+            </summary>
+            <param name="id">The ID of the cafe category to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeOccasionsController.GetCafeOccasions">
+            <summary>
+            Returns all cafe occasions visible to current user
+            </summary>
+            <returns>list of cafe occasions</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeOccasionsController.GetCafeOccasion(System.Guid)">
+            <summary>
+            Returns a single cafe occasion by id
+            </summary>
+            <param name="id">The ID of the cafe occasion to retrieve</param>
+            <returns>A cafe occasion object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeOccasionsController.PutCafeOccasion(System.Guid,App.DTO.v1_0.CafeOccasion)">
+            <summary>
+            Updates a specific cafe occasion
+            </summary>
+            <param name="id">The ID of the cafe occasion to update</param>
+            <param name="cafeOccasion">The updated cafe occasion data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeOccasionsController.PostCafeOccasion(App.DTO.v1_0.CafeOccasion)">
+            <summary>
+            Adds a new cafe occasion
+            </summary>
+            <param name="cafeOccasion">Data transfer object representing the cafe occasion to add</param>
+            <returns>The created cafe occasion</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeOccasionsController.DeleteCafeOccasion(System.Guid)">
+            <summary>
+            Deletes a specific cafe occasion
+            </summary>
+            <param name="id">The ID of the cafe occasion to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafesController.GetCafes">
+            <summary>
+            Returns all cafes visible to current user
+            </summary>
+            <returns>list of Cafes</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafesController.GetAllCafes">
+            <summary>
+            Returns all cafes
+            </summary>
+            <returns>list of Cafes</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafesController.GetCafe(System.Guid)">
+            <summary>
+            Returns a single cafe by id
+            </summary>
+            <param name="id">The ID of the cafe to retrieve</param>
+            <returns>A cafe object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafesController.GetCafeWithoutUser(System.Guid)">
+            <summary>
+            Returns a single cafe by id without user
+            </summary>
+            <param name="id">The ID of the cafe to retrieve</param>
+            <returns>A cafe object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafesController.PutCafe(System.Guid,App.DTO.v1_0.Cafe)">
+            <summary>
+            Updates a specific cafe
+            </summary>
+            <param name="id">The ID of the cafe to update</param>
+            <param name="cafe">The updated cafe data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafesController.PostCafe(App.DTO.v1_0.Cafe)">
+            <summary>
+            Adds a new cafe
+            </summary>
+            <param name="cafe">Data transfer object representing the cafe to add</param>
+            <returns>The created cafe</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafesController.DeleteCafe(System.Guid)">
+            <summary>
+            Deletes a specific cafe
+            </summary>
+            <param name="id">The ID of the cafe to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeTypesController.GetCafeTypes">
+            <summary>
+            Returns all cafe types visible to current user
+            </summary>
+            <returns>list of cafe types</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeTypesController.GetCafeType(System.Guid)">
+            <summary>
+            Returns a single cafe type by id
+            </summary>
+            <param name="id">The ID of the cafe type to retrieve</param>
+            <returns>A cafe type object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeTypesController.PutCafeType(System.Guid,App.DTO.v1_0.CafeType)">
+            <summary>
+            Updates a specific cafe type
+            </summary>
+            <param name="id">The ID of the cafe type to update</param>
+            <param name="cafeType">The updated cafe type data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeTypesController.PostCafeType(App.DTO.v1_0.CafeType)">
+            <summary>
+            Adds a new cafe type
+            </summary>
+            <param name="cafeType">Data transfer object representing the cafe type to add</param>
+            <returns>The created cafe type</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CafeTypesController.DeleteCafeType(System.Guid)">
+            <summary>
+            Deletes a specific cafe type
+            </summary>
+            <param name="id">The ID of the cafe type to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CategoryOfCafesController.GetCategoryOfCafes">
+            <summary>
+            Returns all categories of cafe visible to current user
+            </summary>
+            <returns>list of categories of cafe</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CategoryOfCafesController.GetCategoriesForCafe(System.Guid)">
+            <summary>
+            Returns all categories for specific cafe
+            </summary>
+            <returns>list of categories of cafe</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CategoryOfCafesController.GetCategoryOfCafe(System.Guid)">
+            <summary>
+            Returns a single category of cafe by id
+            </summary>
+            <param name="id">The ID of the category of cafe to retrieve</param>
+            <returns>A category of cafe object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CategoryOfCafesController.PutCategoryOfCafe(System.Guid,App.DTO.v1_0.CategoryOfCafe)">
+            <summary>
+            Updates a specific category of cafe
+            </summary>
+            <param name="id">The ID of the category of cafe to update</param>
+            <param name="categoryOfCafe">The updated category of cafe data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CategoryOfCafesController.PostCategoryOfCafe(App.DTO.v1_0.CategoryOfCafe)">
+            <summary>
+            Adds a new category of cafe
+            </summary>
+            <param name="categoryOfCafe">Data transfer object representing the category of cafe to add</param>
+            <returns>The created category of cafe</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CategoryOfCafesController.DeleteCategoryOfCafe(System.Guid)">
+            <summary>
+            Deletes a specific category of cafe
+            </summary>
+            <param name="id">The ID of the category of cafe to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CitiesController.GetCities">
+            <summary>
+            Returns all cities visible to current user
+            </summary>
+            <returns>list of cities</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CitiesController.GetCity(System.Guid)">
+            <summary>
+            Returns a single city by id
+            </summary>
+            <param name="id">The ID of the city to retrieve</param>
+            <returns>A city object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CitiesController.PutCity(System.Guid,App.DTO.v1_0.City)">
+            <summary>
+            Updates a specific city
+            </summary>
+            <param name="id">The ID of the city to update</param>
+            <param name="city">The updated city data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CitiesController.PostCity(App.DTO.v1_0.City)">
+            <summary>
+            Adds a new city
+            </summary>
+            <param name="city">Data transfer object representing the city to add</param>
+            <returns>The created city</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.CitiesController.DeleteCity(System.Guid)">
+            <summary>
+            Deletes a specific city
+            </summary>
+            <param name="id">The ID of the city to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.FavouritesController.GetFavourites">
+            <summary>
+            Returns all favourites visible to current user
+            </summary>
+            <returns>list of favourites</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.FavouritesController.GetFavourite(System.Guid)">
+            <summary>
+            Returns a single favourite by id
+            </summary>
+            <param name="id">The ID of the favourite to retrieve</param>
+            <returns>A favourite object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.FavouritesController.PutFavourite(System.Guid,App.DTO.v1_0.Favourite)">
+            <summary>
+            Updates a specific favourite
+            </summary>
+            <param name="id">The ID of the favourite to update</param>
+            <param name="favourite">The updated favourite data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.FavouritesController.PostFavourite(App.DTO.v1_0.Favourite)">
+            <summary>
+            Adds a new favourite
+            </summary>
+            <param name="favourite">Data transfer object representing the favourite to add</param>
+            <returns>The created favourite</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.FavouritesController.DeleteFavourite(System.Guid)">
+            <summary>
+            Deletes a specific favourite
+            </summary>
+            <param name="id">The ID of the favourite to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.Identity.AccountController.Register(App.DTO.v1_0.Identity.RegisterInfo,System.Int32)">
+            <summary>
+            Register new local user into app.
+            </summary>
+            <param name="registrationData">Username and password. And personal details.</param>
+            <param name="expiresInSeconds">Override jwt lifetime for testing.</param>
+            <returns>JWTResponse - jwt and refresh token</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.Identity.AccountController.Login(App.DTO.v1_0.Identity.LoginInfo,System.Int32)">
+            <summary>
+            Login new local user into app.
+            </summary>
+            <param name="loginInfo">Username and password. And personal details.</param>
+            <param name="expiresInSeconds">Override jwt lifetime for testing.</param>
+            <returns>JWTResponse - jwt and refresh token</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.Identity.AccountController.RefreshTokenData(App.DTO.v1_0.Identity.TokenRefreshInfo,System.Int32)">
+            <summary>
+            Refresh the authentication tokens for a user.
+            </summary>
+            <param name="tokenRefreshInfo">The current JWT and refresh token.</param>
+            <param name="expiresInSeconds">Override jwt lifetime for testing.</param>
+            <returns>JWTResponse - new jwt and refresh token</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.Identity.AccountController.Logout(App.DTO.v1_0.Identity.LogoutInfo)">
+            <summary>
+            Log out the user by invalidating the refresh token.
+            </summary>
+            <param name="logout">Information about the logout attempt, including the refresh token to invalidate.</param>
+            <returns>Status indicating the result of the logout attempt.</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenuItemCategoriesController.GetMenuItemCategories">
+            <summary>
+            Returns all menu item categories visible to current user
+            </summary>
+            <returns>list of menu item categories</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenuItemCategoriesController.GetMenuItemCategory(System.Guid)">
+            <summary>
+            Returns a single menu item category by id
+            </summary>
+            <param name="id">The ID of the menu item category to retrieve</param>
+            <returns>A menu item category object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenuItemCategoriesController.PutMenuItemCategory(System.Guid,App.DTO.v1_0.MenuItemCategory)">
+            <summary>
+            Updates a specific menu item category
+            </summary>
+            <param name="id">The ID of the menu item category to update</param>
+            <param name="menuItemCategory">The updated menu item category data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenuItemCategoriesController.PostMenuItemCategory(App.DTO.v1_0.MenuItemCategory)">
+            <summary>
+            Adds a new menu item category
+            </summary>
+            <param name="menuItmeCategory">Data transfer object representing the menu item category to add</param>
+            <returns>The created menu item category</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenuItemCategoriesController.DeleteMenuItemCategory(System.Guid)">
+            <summary>
+            Deletes a specific menu item category
+            </summary>
+            <param name="id">The ID of the menu item category to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenuItemsController.GetMenuItems">
+            <summary>
+            Returns all menu items visible to current user
+            </summary>
+            <returns>list of menu items</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenuItemsController.GetAllMenuItemsForMenu(System.Guid)">
+            <summary>
+            Returns all menu items for specific menu
+            </summary>
+            <returns>list of review photos</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenuItemsController.GetMenuItem(System.Guid)">
+            <summary>
+            Returns a single menu item by id
+            </summary>
+            <param name="id">The ID of the menu item to retrieve</param>
+            <returns>A menu item object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenuItemsController.PutMenuItem(System.Guid,App.DTO.v1_0.MenuItem)">
+            <summary>
+            Updates a specific menu item
+            </summary>
+            <param name="id">The ID of the menu item to update</param>
+            <param name="menuItem">The updated menu item data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenuItemsController.PostMenuItem(App.DTO.v1_0.MenuItem)">
+            <summary>
+            Adds a new menu item
+            </summary>
+            <param name="menuItem">Data transfer object representing the menu item to add</param>
+            <returns>The created menu item</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenuItemsController.DeleteMenuItem(System.Guid)">
+            <summary>
+            Deletes a specific menu item
+            </summary>
+            <param name="id">The ID of the menu item to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenusController.GetMenus">
+            <summary>
+            Returns all menus visible to current user
+            </summary>
+            <returns>list of menus</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenusController.GetAllMenus">
+            <summary>
+            Returns all menus
+            </summary>
+            <returns>list of menus</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenusController.GetAllMenusForCafe(System.Guid)">
+            <summary>
+            Returns all menus for specific cafe
+            </summary>
+            <returns>list of menus</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenusController.GetMenu(System.Guid)">
+            <summary>
+            Returns a single menu by id
+            </summary>
+            <param name="id">The ID of the menu to retrieve</param>
+            <returns>A menu object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenusController.PutMenu(System.Guid,App.DTO.v1_0.Menu)">
+            <summary>
+            Updates a specific menu
+            </summary>
+            <param name="id">The ID of the menu to update</param>
+            <param name="menu">The updated menu data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenusController.PostMenu(App.DTO.v1_0.Menu)">
+            <summary>
+            Adds a new menu
+            </summary>
+            <param name="menu">Data transfer object representing the menu to add</param>
+            <returns>The created menu</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.MenusController.DeleteMenu(System.Guid)">
+            <summary>
+            Deletes a specific menu
+            </summary>
+            <param name="id">The ID of the menu to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.OccasionOfCafesController.GetOccasionOfCafes">
+            <summary>
+            Returns all occasion of cafes visible to current user
+            </summary>
+            <returns>list of occasion of cafes</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.OccasionOfCafesController.GetOccasionsForCafe(System.Guid)">
+            <summary>
+            Returns all occasion for specific cafe
+            </summary>
+            <returns>list of occasion of cafes</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.OccasionOfCafesController.GetOccasionOfCafe(System.Guid)">
+            <summary>
+            Returns a single occasion of cafes by id
+            </summary>
+            <param name="id">The ID of the occasion of cafes to retrieve</param>
+            <returns>A occasion of cafes object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.OccasionOfCafesController.PutOccasionOfCafe(System.Guid,App.DTO.v1_0.OccasionOfCafe)">
+            <summary>
+            Updates a specific occasion of cafe
+            </summary>
+            <param name="id">The ID of the occasion of cafe to update</param>
+            <param name="occasionOfCafe">The updated occasion of cafe data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.OccasionOfCafesController.PostOccasionOfCafe(App.DTO.v1_0.OccasionOfCafe)">
+            <summary>
+            Adds a new occasion of cafe
+            </summary>
+            <param name="occasionOfCafe">Data transfer object representing the occasion of cafe to add</param>
+            <returns>The created occasion of cafe</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.OccasionOfCafesController.DeleteOccasionOfCafe(System.Guid)">
+            <summary>
+            Deletes a specific occasion of cafe
+            </summary>
+            <param name="id">The ID of the occasion of cafe to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ReviewPhotosController.GetReviewPhotos">
+            <summary>
+            Returns all review photos visible to current user
+            </summary>
+            <returns>list of review photos</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ReviewPhotosController.GetAllReviewPhotos">
+            <summary>
+            Returns all review photos
+            </summary>
+            <returns>list of review photos</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ReviewPhotosController.GetAllReviewPhotosForReview(System.Guid)">
+            <summary>
+            Returns all review photos for specific review
+            </summary>
+            <returns>list of review photos</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ReviewPhotosController.GetReviewPhoto(System.Guid)">
+            <summary>
+            Returns a single review photo by id
+            </summary>
+            <param name="id">The ID of the review photo to retrieve</param>
+            <returns>A review object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ReviewPhotosController.PutReviewPhoto(System.Guid,App.DTO.v1_0.ReviewPhoto)">
+            <summary>
+            Updates a specific review photo
+            </summary>
+            <param name="id">The ID of the review photo to update</param>
+            <param name="reviewPhoto">The updated review photo data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ReviewPhotosController.PostReviewPhoto(App.DTO.v1_0.ReviewPhoto)">
+            <summary>
+            Adds a new review photo
+            </summary>
+            <param name="reviewPhoto">Data transfer object representing the review photo to add</param>
+            <returns>The created review photo</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ReviewPhotosController.DeleteReviewPhoto(System.Guid)">
+            <summary>
+            Deletes a specific review photo
+            </summary>
+            <param name="id">The ID of the review photo to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ReviewsController.GetReviews">
+            <summary>
+            Returns all reviews visible to current user
+            </summary>
+            <returns>list of reviews</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ReviewsController.GetReview(System.Guid)">
+            <summary>
+            Returns a single review by id
+            </summary>
+            <param name="id">The ID of the review to retrieve</param>
+            <returns>A review object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ReviewsController.GetReviewWithoutUser(System.Guid)">
+            <summary>
+            Returns a single review by id without user
+            </summary>
+            <param name="id">The ID of the review to retrieve</param>
+            <returns>A review object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ReviewsController.PutReview(System.Guid,App.DTO.v1_0.Review)">
+            <summary>
+            Updates a specific review
+            </summary>
+            <param name="id">The ID of the review to update</param>
+            <param name="review">The updated review data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ReviewsController.PostReview(App.DTO.v1_0.Review)">
+            <summary>
+            Adds a new review
+            </summary>
+            <param name="review">Data transfer object representing the review to add</param>
+            <returns>The created review</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.ReviewsController.DeleteReview(System.Guid)">
+            <summary>
+            Deletes a specific review
+            </summary>
+            <param name="id">The ID of the review to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.TypeOfCafesController.GetTypeOfCafes">
+            <summary>
+            Returns all type of cafes visible to current user
+            </summary>
+            <returns>list of type of cafes</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.TypeOfCafesController.GetTypesForCafe(System.Guid)">
+            <summary>
+            Returns all types for specific cafe
+            </summary>
+            <returns>list of type of cafes</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.TypeOfCafesController.GetTypeOfCafe(System.Guid)">
+            <summary>
+            Returns a single type of cafe by id
+            </summary>
+            <param name="id">The ID of the type of cafe to retrieve</param>
+            <returns>A cafe category object</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.TypeOfCafesController.PutTypeOfCafe(System.Guid,App.DTO.v1_0.TypeOfCafe)">
+            <summary>
+            Updates a specific type of cafe
+            </summary>
+            <param name="id">The ID of the type of cafe to update</param>
+            <param name="typeOfCafe">The updated type of cafe data</param>
+            <returns>A response indicating the result of the update operation</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.TypeOfCafesController.PostTypeOfCafe(App.DTO.v1_0.TypeOfCafe)">
+            <summary>
+            Adds a new type of cafe
+            </summary>
+            <param name="typeOfCafe">Data transfer object representing the type of cafe to add</param>
+            <returns>The created type of cafe</returns>
+        </member>
+        <member name="M:WebApp.ApiControllers.TypeOfCafesController.DeleteTypeOfCafe(System.Guid)">
+            <summary>
+            Deletes a specific type of cafe
+            </summary>
+            <param name="id">The ID of the type of cafe to delete</param>
+            <returns>A response indicating the result of the delete operation</returns>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.AccessDeniedModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.AccessDeniedModel.OnGet">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ConfirmEmailModel.StatusMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ConfirmEmailChangeModel.StatusMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.ProviderDisplayName">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.ReturnUrl">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.ErrorMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ExternalLoginModel.InputModel.Email">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ForgotPasswordModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.ForgotPasswordModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ForgotPasswordModel.InputModel.Email">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.ForgotPasswordConfirmation">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ForgotPasswordConfirmation.OnGet">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.LockoutModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.LockoutModel.OnGet">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.ExternalLogins">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.ReturnUrl">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.ErrorMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.LoginModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.InputModel.Email">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.InputModel.Password">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginModel.InputModel.RememberMe">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.RememberMe">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.ReturnUrl">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.InputModel.TwoFactorCode">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWith2faModel.InputModel.RememberMachine">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.ReturnUrl">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.InputModel.RecoveryCode">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.StatusMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.InputModel.OldPassword">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.InputModel.NewPassword">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.InputModel.ConfirmPassword">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.InputModel.Password">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.RequirePassword">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.Disable2faModel.StatusMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.Email">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.IsEmailConfirmed">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.StatusMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EmailModel.InputModel.NewEmail">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.SharedKey">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.AuthenticatorUri">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.RecoveryCodes">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.StatusMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.InputModel.Code">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.CurrentLogins">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.OtherLogins">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.ShowRemoveButton">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.StatusMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel.RecoveryCodes">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel.StatusMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel.Username">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel.StatusMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.IndexModel.InputModel.PhoneNumber">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.Index">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.Email">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.ChangePassword">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.DownloadPersonalData">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.DeletePersonalData">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.ExternalLogins">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.PersonalData">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.TwoFactorAuthentication">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.IndexNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.EmailNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.ChangePasswordNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.DownloadPersonalDataNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.DeletePersonalDataNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.ExternalLoginsNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.PersonalDataNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.TwoFactorAuthenticationNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ManageNavPages.PageNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String)">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel.StatusMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel.StatusMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel.InputModel.NewPassword">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.SetPasswordModel.InputModel.ConfirmPassword">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel.RecoveryCodes">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel.StatusMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel.OnGet">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.HasAuthenticator">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.RecoveryCodesLeft">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.Is2faEnabled">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.IsMachineRemembered">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.StatusMessage">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.ReturnUrl">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.ExternalLogins">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.RegisterModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.InputModel.Email">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.InputModel.Password">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterModel.InputModel.ConfirmPassword">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterConfirmationModel.Email">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterConfirmationModel.DisplayConfirmAccountLink">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.RegisterConfirmationModel.EmailConfirmationUrl">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ResendEmailConfirmationModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.ResendEmailConfirmationModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ResendEmailConfirmationModel.InputModel.Email">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.Input">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.InputModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.InputModel.Email">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.InputModel.Password">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.InputModel.ConfirmPassword">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.Account.ResetPasswordModel.InputModel.Code">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.Account.ResetPasswordConfirmationModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.Account.ResetPasswordConfirmationModel.OnGet">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:WebApp.Areas.Identity.Pages.ErrorModel">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.ErrorModel.RequestId">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:WebApp.Areas.Identity.Pages.ErrorModel.ShowRequestId">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:WebApp.Areas.Identity.Pages.ErrorModel.OnGet">
+            <summary>
+                This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+    </members>
+</doc>
